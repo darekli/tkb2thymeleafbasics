@@ -38,7 +38,7 @@ public class CarController {
     public String addCar(@ModelAttribute Car car){
         cars.add(car);
        // System.out.println(car);
-       // return "car"; samo car wywala bledy nalezy przekierowac
+       // return "car"; samo car wywala bledy nalezy przekierować
         return "redirect:/car";
     }
 }

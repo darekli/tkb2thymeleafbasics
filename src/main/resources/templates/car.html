@@ -22,5 +22,11 @@
     <p> <input type="submit" value="add new car"></p>
 </form>
 
+<form th:action="@{/delete-car}" th:object="${newCar}" method="delete">
+    <p> Model: <input type="text" th:field="*{model}" ></p>
+    <p> Mark: <input type="text" th:field="*{mark}" ></p>
+    <p> <input type="submit" value="delete car"></p>
+</form>
+
 </body>
 </html>
